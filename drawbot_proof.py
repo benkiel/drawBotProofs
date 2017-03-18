@@ -37,7 +37,7 @@ def drawSpacing(font, leftMargin, rightMargin, topMargin, bottomMargin, fontSize
     print over
     if orgin + max_width > width() - rightMargin:
       newPage()
-      orgin = (leftMargin, bottomMargin)
+      orgin = leftMargin
     overflow = textBox(overflow, (orgin, bottomMargin, int(max_width + 1), height()-(bottomMargin + topMargin)))
     over = len(overflow)
     orgin = orgin + max_width + gutter
